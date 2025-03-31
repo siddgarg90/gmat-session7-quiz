@@ -223,7 +223,10 @@ export default function App() {
 
       {/* Question Card */}
       <div className="bg-white p-4 rounded shadow space-y-4">
-        <p className="italic text-gray-700">{current.description}</p>
+        <p
+          className="font-medium text-gray-900"
+          dangerouslySetInnerHTML={{ __html: current.description }}
+        ></p>
         <p className="font-medium text-gray-900">{current.question}</p>
 
         <div className="space-y-2">
